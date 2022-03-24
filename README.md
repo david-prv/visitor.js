@@ -1,5 +1,5 @@
-# tracking.js
-simple self-hosting tracker library in javascript
+# visitor.js
+simple self-hosting visitor tracking library in javascript
 
 ## Installation
 1. Upload files to your server
