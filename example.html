@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Standard Display -->
+<span id="visitor-count"></span>
+
+<footer>
+    <!-- Begin Visitor Count -->
+    <script id="vc-src" src="PATH_TO_YOUR_CWD/visitorjs/ajax.js"></script>
+    <script id="ajax-src" src="PATH_TO_YOUR_CWD/visitorjs/visitor.js"></script>
+    <script type="text/javascript">
+        // we want to know exact location
+        // and print data as callback
+        let counter = new VisitorCounter('exact_loc', function(data) { console.log(data); }, false);
+
+        // give this function a node
+        // as arg to change container or comment
+        // it out for not using any display containment
+        counter.useContainer();
+
+        // count this visitor
+        counter.make();
+    </script>
+    <!-- End Visitor Count -->
+</footer>
+
+</html>
